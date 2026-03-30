@@ -1,1 +1,39 @@
+# ============================================================
+# Multimodal Crime / Incident Report Analyzer
+# AI for Engineers — Group Assignment
+# ============================================================
 
+# ── Student 1: Audio Analyst ────────────────────────────────
+openai-whisper          # speech-to-text transcription
+gtts                    # text-to-speech (synthetic audio generation)
+pydub                   # audio file manipulation
+torchaudio              # audio processing with PyTorch
+
+# ── Student 2: Document Analyst ────────────────────────────
+pdfplumber              # text extraction from text-based PDFs
+pymupdf                 # fast PDF parsing (fallback)
+pytesseract             # OCR for scanned PDF pages
+pillow                  # image handling (required by pytesseract)
+pdf2image               # convert PDF pages to images for OCR
+
+# ── Student 3: Image Analyst ───────────────────────────────
+ultralytics             # YOLOv8 object detection
+opencv-python           # image preprocessing and frame handling
+roboflow                # Roboflow dataset download (fire detection)
+
+# ── Student 4: Video Analyst ───────────────────────────────
+moviepy                 # video loading and manipulation
+imageio                 # video/image I/O
+# opencv-python         # (listed above, shared with Student 3)
+# ultralytics           # (listed above, shared with Student 3)
+
+# ── Student 5: Text Analyst ────────────────────────────────
+spacy                   # NER and text preprocessing
+transformers            # HuggingFace: sentiment analysis + classification
+nltk                    # tokenization, stopwords, lemmatization
+torch                   # PyTorch backend for transformers
+
+# ── Integration / Shared ────────────────────────────────────
+pandas                  # DataFrame operations and CSV I/O
+numpy                   # numerical operations
+tabulate                # pretty-print tabular data
