@@ -5,7 +5,6 @@
 
 # ── Student 1: Audio Analyst ────────────────────────────────
 openai-whisper          # speech-to-text transcription
-gtts                    # text-to-speech (synthetic audio generation)
 pydub                   # audio file manipulation
 torchaudio              # audio processing with PyTorch
 
