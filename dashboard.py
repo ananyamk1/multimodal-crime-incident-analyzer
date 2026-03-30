@@ -60,24 +60,6 @@ section[data-testid="stSidebar"] * {{
     color: {C['text']} !important;
 }}
 
-/* ── Text inputs (sidebar + main) ─────────────────── */
-input[type="text"],
-div[data-baseweb="input"] input,
-div[data-testid="stTextInput"] input {{
-    background-color: {C['card']} !important;
-    color: {C['text']} !important;
-    border: 1.5px solid {C['border']} !important;
-    border-radius: 6px !important;
-}}
-div[data-baseweb="input"] {{
-    background-color: {C['card']} !important;
-    border: 1.5px solid {C['border']} !important;
-    border-radius: 6px !important;
-}}
-div[data-baseweb="input"]:focus-within {{
-    border-color: {C['blue']} !important;
-}}
-
 /* ── Metric cards ─────────────────────────────────── */
 div[data-testid="metric-container"] {{
     background-color: {C['card']};
@@ -159,6 +141,15 @@ with st.sidebar:
     )
 
     event_search = st.text_input("Search event keyword", placeholder="e.g. fire, robbery")
+
+    st.markdown("---")
+    st.markdown(f"<div class='section-title'>ℹ About</div>", unsafe_allow_html=True)
+    st.caption(
+        "AI-powered pipeline that ingests audio, PDF, image, "
+        "video, and text data and converts them into a unified "
+        "structured incident report."
+    )
+    st.caption("Course: AI for Engineers")
 
 # ─────────────────────────────────────────────────────────────────
 # APPLY FILTERS
@@ -307,7 +298,7 @@ with tab1:
 with tab2:
     st.markdown(f"<div class='section-title'>Emergency Call Analysis — Student 1 (Audio Analyst)</div>",
                 unsafe_allow_html=True)
-    st.caption("Tools: OpenAI Whisper · spaCy NER · HuggingFace DistilBERT · Dataset: 911 synthetic calls")
+    st.caption("Tools: OpenAI Whisper · spaCy NER · HuggingFace DistilBERT · Dataset: 911 Calls (real audio, first 6 seconds)")
     st.markdown("<br>", unsafe_allow_html=True)
 
     col_a, col_b = st.columns([1, 1.3])

@@ -1,0 +1,5 @@
+.DS_Store
+911_first6sec/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
