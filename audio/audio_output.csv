@@ -1,0 +1,6 @@
+Call_ID,Transcript,Extracted_Event,Location,Sentiment,Urgency_Score
+C001,There is a fire. People are trapped on the second floor of the building on downtown Avenue. Please hurry.,"Fire, Medical Emergency",Avenue,Distressed,0.8
+C002,I just witnessed a car accident on Main Street near the intersection of Oak Road. Two vehicles. Someone is injured.,"Road Accident, Medical Emergency","Main Street, Oak Road",Distressed,0.2
+C003,There is a robbery happening right now at the convenience store on Elm Street. The suspect has a weapon.,Robbery/Theft,Elm Street,Distressed,0.6
+C004,Help! There is a man attacking someone outside the park on River Road. Please send police immediately!,Assault / Fight,River Road,Distressed,0.89
+C005,Smoke is coming from the warehouse near the docks on Harbor Boulevard. It looks like it might be on fire.,Fire / Building fire,Harbor Boulevard,Distressed,0.52

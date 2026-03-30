@@ -1,0 +1,116 @@
+Text_ID,Crime_Type,Location_Entity,Sentiment,Topic,Severity_Label
+TXT_001,Shooting,"Hoover, AL",Negative,Shooting,High
+TXT_002,Shooting,Unknown,Negative,Shooting,High
+TXT_003,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_004,General Crime,Unknown,Negative,Shooting,Low
+TXT_005,Homicide,Unknown,Negative,Homicide / Murder,High
+TXT_006,General Crime,Unknown,Negative,Police Activity,Low
+TXT_007,Robbery / Theft,Unknown,Negative,Robbery / Theft,Medium
+TXT_008,General Crime,Pakistan,Negative,Police Activity,Low
+TXT_009,General Crime,Unknown,Negative,Shooting,Low
+TXT_010,General Crime,Baltimore,Neutral,General Crime,Low
+TXT_011,General Crime,Redbridge,Neutral,Police Activity,Low
+TXT_012,General Crime,Unknown,Negative,Shooting,Low
+TXT_013,Assault,Unknown,Negative,Police Activity,Low
+TXT_014,General Crime,Badger,Neutral,Shooting,Low
+TXT_015,General Crime,Unknown,Neutral,Assault,Low
+TXT_016,General Crime,Unknown,Negative,Police Activity,Low
+TXT_017,General Crime,Delhi,Negative,Police Activity,Low
+TXT_018,General Crime,Delhi,Negative,Police Activity,Low
+TXT_019,General Crime,Delhi,Negative,Police Activity,Low
+TXT_020,Arrest,Unknown,Negative,Police Activity,Medium
+TXT_021,General Crime,Delhi,Negative,Police Activity,Low
+TXT_022,Arrest,Unknown,Negative,Police Activity,Medium
+TXT_023,General Crime,Unknown,Negative,Shooting,Low
+TXT_024,General Crime,Delhi,Negative,Police Activity,Low
+TXT_025,Arrest,Unknown,Negative,Police Activity,Medium
+TXT_026,Arrest,Rs,Neutral,Police Activity,Medium
+TXT_027,General Crime,Mumbai,Neutral,Police Activity,Low
+TXT_028,General Crime,Delhi,Negative,Police Activity,Low
+TXT_029,General Crime,Unknown,Negative,Police Activity,Low
+TXT_030,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_031,Fire / Arson,Unknown,Negative,Fire / Arson,High
+TXT_032,General Crime,Unknown,Negative,Police Activity,Low
+TXT_033,General Crime,Onitsha,Neutral,Police Activity,Low
+TXT_034,Arrest,Unknown,Negative,Police Activity,Medium
+TXT_035,General Crime,Unknown,Negative,Police Activity,Low
+TXT_036,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_037,General Crime,Petaluma,Neutral,Police Activity,Low
+TXT_038,Assault,Unknown,Negative,Assault,Low
+TXT_039,General Crime,Unknown,Negative,Assault,Low
+TXT_040,Homicide,Unknown,Negative,Homicide / Murder,High
+TXT_041,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_042,General Crime,Unknown,Negative,Police Activity,Low
+TXT_043,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_044,Assault,Unknown,Negative,Assault,Low
+TXT_045,Shooting,Pontchartrain,Negative,Shooting,High
+TXT_046,Assault,Unknown,Negative,Assault,Low
+TXT_047,General Crime,Unknown,Negative,Police Activity,Low
+TXT_048,Homicide,Murder,Negative,Homicide / Murder,High
+TXT_049,General Crime,Petaluma,Neutral,Police Activity,Low
+TXT_050,Assault,Unknown,Negative,Assault,Low
+TXT_051,General Crime,Petaluma,Neutral,Police Activity,Low
+TXT_052,Shooting,Pontchartrain,Negative,Shooting,High
+TXT_053,General Crime,Detroit,Negative,Shooting,Low
+TXT_054,General Crime,Unknown,Negative,General Crime,Low
+TXT_055,General Crime,Unknown,Negative,General Crime,Low
+TXT_056,General Crime,Unknown,Negative,General Crime,Low
+TXT_057,General Crime,Unknown,Negative,Police Activity,Low
+TXT_058,General Crime,Petaluma,Neutral,Police Activity,Low
+TXT_059,General Crime,Unknown,Negative,Police Activity,Low
+TXT_060,General Crime,Unknown,Negative,Police Activity,Low
+TXT_061,General Crime,Unknown,Negative,General Crime,Low
+TXT_062,General Crime,Unknown,Negative,General Crime,Low
+TXT_063,General Crime,Unknown,Negative,Assault,Low
+TXT_064,General Crime,Unknown,Negative,Shooting,Low
+TXT_065,Homicide,Unknown,Negative,Homicide / Murder,High
+TXT_066,General Crime,Unknown,Negative,Police Activity,Low
+TXT_067,Shooting,Pontchartrain,Negative,Shooting,High
+TXT_068,Shooting,Pontchartrain,Negative,Shooting,High
+TXT_069,Shooting,Pontchartrain,Negative,Shooting,High
+TXT_070,Shooting,Unknown,Negative,Shooting,High
+TXT_071,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_072,Shooting,Pontchartrain,Negative,Shooting,High
+TXT_073,General Crime,Unknown,Negative,Police Activity,Low
+TXT_074,General Crime,Unknown,Neutral,Homicide / Murder,Low
+TXT_075,General Crime,Unknown,Negative,Homicide / Murder,Low
+TXT_076,Shooting,Pontchartrain,Negative,Shooting,High
+TXT_077,Drug Offense,Unknown,Negative,Drug-Related,Medium
+TXT_078,Drug Offense,Unknown,Negative,Drug-Related,Medium
+TXT_079,General Crime,Unknown,Negative,Police Activity,Low
+TXT_080,General Crime,Unknown,Negative,Police Activity,Low
+TXT_081,General Crime,Unknown,Negative,Police Activity,Low
+TXT_082,General Crime,Unknown,Negative,Police Activity,Low
+TXT_083,General Crime,Unknown,Negative,Police Activity,Low
+TXT_084,General Crime,Unknown,Neutral,Drug-Related,Low
+TXT_085,General Crime,Unknown,Neutral,Drug-Related,Low
+TXT_086,General Crime,Unknown,Neutral,Drug-Related,Low
+TXT_087,General Crime,Unknown,Neutral,Drug-Related,Low
+TXT_088,General Crime,Unknown,Neutral,Drug-Related,Low
+TXT_089,General Crime,Unknown,Neutral,Drug-Related,Low
+TXT_090,General Crime,Unknown,Neutral,Drug-Related,Low
+TXT_091,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_092,General Crime,Unknown,Negative,Police Activity,Low
+TXT_093,General Crime,Unknown,Negative,Police Activity,Low
+TXT_094,General Crime,Unknown,Negative,Police Activity,Low
+TXT_095,Arrest,Unknown,Negative,Police Activity,Medium
+TXT_096,General Crime,Unknown,Negative,Police Activity,Low
+TXT_097,General Crime,Unknown,Negative,Police Activity,Low
+TXT_098,General Crime,McDonald,Neutral,Drug-Related,Low
+TXT_099,General Crime,Unknown,Neutral,Police Activity,Low
+TXT_100,General Crime,Unknown,Negative,Police Activity,Low
+TXT_101,General Crime,Unknown,Negative,Police Activity,Low
+TXT_102,General Crime,Unknown,Negative,Shooting,Low
+TXT_103,General Crime,Unknown,Negative,Police Activity,Low
+TXT_104,Homicide,Unknown,Negative,Homicide / Murder,High
+TXT_105,Fire / Arson,Richland,Negative,Fire / Arson,High
+TXT_106,Arrest,Unknown,Neutral,Police Activity,Medium
+TXT_107,Fire / Arson,Richland,Negative,Fire / Arson,High
+TXT_108,General Crime,Unknown,Negative,Police Activity,Low
+TXT_109,General Crime,Unknown,Negative,Police Activity,Low
+TXT_110,General Crime,Badger,Neutral,Shooting,Low
+TXT_111,General Crime,Unknown,Negative,Police Activity,Low
+TXT_112,General Crime,Badger,Neutral,Shooting,Low
+TXT_113,General Crime,Unknown,Negative,Police Activity,Low
+TXT_114,General Crime,Unknown,Negative,Police Activity,Low
+TXT_115,General Crime,Unknown,Neutral,Police Activity,Low
