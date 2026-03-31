@@ -163,8 +163,8 @@ The video CSV required aggregation from frame-level (136 rows) to clip-level bef
 
 ## 6. Team Contributions
 
-| Member | Contributions |
-|--------|--------------|
+| Member | Contributions |  Modules  |
+|--------|--------------|------------|
 | Adi | Audio pipeline — Processed real Kaggle 911 emergency call audio using OpenAI Whisper for speech-to-text transcription; implemented spaCy NER pipeline for location extraction; built keyword-based event classifier with KEYWORD_MAP; designed hybrid urgency scoring combining DistilBERT sentiment confidence with urgency keyword hit count  | audio_processing_final_2.ipynb, audio_output.csv, audio_files/C001–C005.wav |
 | Harshini | PDF pipeline — pExtracted structured data from 75-page FOIA police PDF using 3-tier fallback chain (pdfplumber → PyMuPDF → pytesseract OCR); applied spaCy NER for organization and date extraction; built custom regex normalization to standardize three date formats to YYYY-MM-DD  |   pdf_processing.ipynb, pdf_output.csv (5 rows), LESO2.pdf  |
 | Ashwin | Image pipeline — Downloaded Roboflow fire-smoke detection dataset; ran OpenCV preprocessing pipeline, executed Roboflow hosted YOLOv8 fire-smoke model inference; integrated pytesseract OCR for visible text extraction; classified scene types from detected classes |  image_processing_final.ipynb, image_output.csv (20 rows, Fire Scene detections 0.76–0.97 confidence)  |
