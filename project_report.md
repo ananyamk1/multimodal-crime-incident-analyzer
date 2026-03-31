@@ -1,18 +1,17 @@
 # Multimodal Crime / Incident Report Analyzer
-**AI for Engineers | Spring 2026 | Group Project**
+**AI for Engineers | Spring 2026 | Group Project 9**
 
 ---
 
 ## 1. Overview and Pipeline Architecture
 
-Emergency response departments receive incident data from phone calls, documents, images, video feeds, and social media all at once. Reviewing all of it manually is slow and inconsistent. We built a pipeline that ingests unstructured data from five different modalities and merges them into one structured incident report that can be filtered and queried by severity, event type, or location.
-
+Emergency response departments receive incident data from phone calls, documents, images, video feeds, and social media all at once. Reviewing all of it manually is slow and inconsistent. Our goal was to  build for this, a pipeline that ingests unstructured data from five different modalities where departments recieve incident data and merge them into one structured incident report that can be filtered and queried by severity, event type, or location.
 Each modality runs as an independent pipeline and writes a clean CSV with standardized columns. The integration step joins all five outputs on a shared `Incident_ID` key and computes a final severity rating per incident.
 
 ```
 Audio (.wav)        ──┐
 PDF Reports         ──┤
-Incident Images     ──┼──► Modality CSVs ──► Integration ──► final_incident_report.csv
+Incident Images     ──┼──► Modality CSVs ──► Integration (Dashboard) ──► final_incident_report.csv
 CCTV Video Clips    ──┤
 Social Media Text   ──┘
 ```
@@ -51,7 +50,7 @@ The image pipeline detects objects in crime and incident scene images, classifie
 
 **Tools:** `ultralytics (YOLOv8n)`, `opencv-python`, `pytesseract`, `roboflow`
 
-**Dataset:** Roboflow Fire Detection dataset (1000+ labeled images). For local testing, two bundled ultralytics test images were used: `bus.jpg` and `zidane.jpg`.
+**Dataset:** Roboflow Fire Detection dataset (1000+ labeled images). [ https://universe.roboflow.com/my-space-3zzwr/fire-smoke-detection-odvk ]. For local testing, two bundled ultralytics test images were used: `bus.jpg` and `zidane.jpg`. 
 
 The YOLOv8n COCO model has no fire or smoke classes — a Roboflow fine-tuned model is needed for fire-specific detection in a real deployment. OCR on low-resolution images also returned noisy output and isn't reliable below a certain image quality threshold.
 
