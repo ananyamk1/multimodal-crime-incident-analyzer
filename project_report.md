@@ -165,8 +165,12 @@ The video CSV required aggregation from frame-level (136 rows) to clip-level bef
 
 | Member | Contributions |
 |--------|--------------|
-| Adi | Audio pipeline — Whisper transcription, spaCy NER, urgency scoring hybrid, `audio_output.csv` |
-| Harshini | PDF pipeline — pdfplumber / PyMuPDF / pytesseract extraction chain, date normalization, `pdf_output.csv` |
-| Ashwin | Image pipeline — YOLOv8n inference, OpenCV preprocessing, OCR integration, `image_output.csv` |
-| Sahithi | Video pipeline — frame extraction, motion detection, per-frame YOLO, clip aggregation, `video_output.csv` |
-| Ananya | Text pipeline — tweet cleaning, NER, DistilBERT sentiment, severity tagging, `text_output.csv`; integration notebook, `final_incident_report.csv` |
+| Adi | Audio pipeline — Processed real Kaggle 911 emergency call audio using OpenAI Whisper for speech-to-text transcription; implemented spaCy NER pipeline for location extraction; built keyword-based event classifier with KEYWORD_MAP; designed hybrid urgency scoring combining DistilBERT sentiment confidence with urgency keyword hit count  | audio_processing_final_2.ipynb, audio_output.csv, audio_files/C001–C005.wav |
+| Harshini | PDF pipeline — pExtracted structured data from 75-page FOIA police PDF using 3-tier fallback chain (pdfplumber → PyMuPDF → pytesseract OCR); applied spaCy NER for organization and date extraction; built custom regex normalization to standardize three date formats to YYYY-MM-DD  |   pdf_processing.ipynb, pdf_output.csv (5 rows), LESO2.pdf  |
+| Ashwin | Image pipeline — Downloaded Roboflow fire-smoke detection dataset; ran OpenCV preprocessing pipeline, executed Roboflow hosted YOLOv8 fire-smoke model inference; integrated pytesseract OCR for visible text extraction; classified scene types from detected classes |  image_processing_final.ipynb, image_output.csv (20 rows, Fire Scene detections 0.76–0.97 confidence)  |
+| Sahithi | Video pipeline — Downloaded 3 CAVIAR CCTV clips; built OpenCV frame extraction pipeline (1 frame per 15 frames); implemented motion detection via frame differencing with Gaussian blur and threshold; ran YOLOv8n on each sampled frame; classified events by clip name and motion score; aggregated frame-level output to clip-level  |  video_processing.ipynb, video_output.csv (136 frame-level rows across 3 clips) |
+| Ananya | Text pipeline — Cleaned and processed 115 real crime tweets (regex, NLTK tokenization, stopword removal); ran spaCy NER for location extraction; applied DistilBERT sentiment analysis; built keyword classifiers for crime type, topic, and severity; built full integration pipeline, defined Incident_ID mapping, merged DataFrames, handled missing values, computed severity scores, implemented query_incidents() filter interface |  text_processing.ipynb, text_output.csv, integration.ipynb, final_incident_report.csv  |
+
+
+
+
