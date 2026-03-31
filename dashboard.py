@@ -91,7 +91,7 @@ filtered_text  = text_df[text_df["Text_ID"].isin(filtered["Text_Source"])]
 # ─────────────────────────────────────────────────────────────────
 st.title("Multimodal Crime / Incident Report Analyzer")
 st.caption(
-    f"AI for Engineers — Group Assignment  |  "
+    f"AI for Engineers — Group 9 Assignment  |  "
     f"Showing **{len(filtered)}** of **{len(final_df)}** incidents"
 )
 st.markdown("---")
@@ -113,9 +113,9 @@ st.markdown("<br>", unsafe_allow_html=True)
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "Overview",
     "Audio",
-    "Documents",
+    "PDFs",
     "Image & Video",
-    "Text / Social Media",
+    "Text",
     "Full Integrated Report",
 ])
 
@@ -213,7 +213,7 @@ with tab1:
 # TAB 2 — AUDIO  (uses filtered_audio)
 # ════════════════════════════════════════════════════════════════
 with tab2:
-    st.subheader("Emergency Call Analysis — Student 1 (Audio Analyst)")
+    st.subheader("Emergency Call Audio Analysis")
     st.caption("Tools: OpenAI Whisper · spaCy NER · HuggingFace DistilBERT · Dataset: Kaggle 911 Calls (real audio)")
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -270,7 +270,7 @@ with tab2:
 # TAB 3 — DOCUMENTS  (full pdf_df — only 5 rows, not severity-linked)
 # ════════════════════════════════════════════════════════════════
 with tab3:
-    st.subheader("Police PDF Document Extraction — Student 2 (Document Analyst)")
+    st.subheader("Police PDF Document Extraction")
     st.caption("Tools: pdfplumber · PyMuPDF · pytesseract OCR · spaCy NER · Dataset: Arkansas PD LESO2.pdf (75 pages)")
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -321,7 +321,7 @@ with tab3:
 # TAB 4 — IMAGE & VIDEO  (full image_df / video_df)
 # ════════════════════════════════════════════════════════════════
 with tab4:
-    st.subheader("Visual Analysis — Student 3 (Image) & Student 4 (Video)")
+    st.subheader("Visual Analysis Image and Video")
 
     img_col, vid_col = st.columns(2)
 
@@ -400,7 +400,7 @@ with tab4:
 # TAB 5 — TEXT / SOCIAL MEDIA  (uses filtered_text)
 # ════════════════════════════════════════════════════════════════
 with tab5:
-    st.subheader("Text / Social Media Analysis — Student 5 (Text Analyst)")
+    st.subheader("Text Analysis")
     st.caption("Tools: spaCy · NLTK · HuggingFace DistilBERT · Dataset: CrimeReport (115 tweets)")
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -500,7 +500,7 @@ with tab5:
 # TAB 6 — FULL INTEGRATED REPORT  (uses filtered)
 # ════════════════════════════════════════════════════════════════
 with tab6:
-    st.subheader("Final Integrated Incident Report")
+    st.subheader("Integrated Incident Report")
     st.caption(
         f"5 incidents × {len(final_df.columns)} columns — "
         "all 5 modalities merged on Incident_ID · missing data filled with 'No data'"
