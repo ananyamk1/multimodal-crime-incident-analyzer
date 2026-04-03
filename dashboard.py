@@ -1,6 +1,6 @@
 """
-Multimodal Crime / Incident Report Analyzer — Streamlit Dashboard
-AI for Engineers Group Assignment
+Streamlit Dashboard
+AI for Engineers Group 9
 
 Run: streamlit run dashboard.py
 """
