@@ -1,12 +1,15 @@
 # Multimodal Crime / Incident Report Analyzer
 
-**Course:** AI for Engineers | **Type:** Group Assignment (5 Students) | **Marks:** 100
-
-An AI-powered pipeline that automatically ingests unstructured data from five modalities — audio, documents, images, video, and text — and converts them into a unified structured incident report that investigators can query and analyze.
+**Assignment - Group 9**
 
 ---
 
+
 ## AI Pipeline Architecture
+
+
+An AI-powered pipeline that automatically ingests unstructured data from five modalities: audio, documents, images, video, and text ; and converts them into a unified structured incident report that investigators can query and analyze.
+
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -61,6 +64,8 @@ An AI-powered pipeline that automatically ingests unstructured data from five mo
 
 ---
 
+
+
 ## Repository Structure
 
 ```
@@ -103,7 +108,7 @@ multimodal-crime-incident-analyzer/
 
 ---
 
-## Individual Student Roles
+## Individual Roles
 
 | Student | Modality | AI Tools | Dataset | Output |
 |---------|----------|----------|---------|--------|
